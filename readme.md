@@ -4,7 +4,7 @@ Nanobots is a library which helps you fix data and refactor your database in a s
 
 ## Problems with breaking schema changes
 
-There are a few problems with making a breaking schema change (like a rename), and many teams/companies just choose not to make them. This means your database cannot be refactored and evolved like you code, which can cause problems downt the track.
+There are a few problems with making a breaking schema change (like a renaming a column), and many teams/companies just choose not to make them. This means your database cannot be refactored and evolved like your code, which can cause problems down the track.
 
 The general approach to deploying database migrations is run them _before_ the code is deployed, the rest of this readme assume this order in deployments.
 

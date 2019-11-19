@@ -1,18 +1,20 @@
-export function addAppliedUpgrades(appliedUpgrades: string[] | null, upgradeName: string) {
-    if (appliedUpgrades) {
-        if (appliedUpgrades.includes(upgradeName)) {
-            return appliedUpgrades
-        }
-
-        return [...appliedUpgrades, upgradeName]
+export function addAppliedUpgrades(
+    appliedUpgrades: string[],
+    upgradeName: string,
+) {
+    if (appliedUpgrades.includes(upgradeName)) {
+        return appliedUpgrades
     }
 
-    return [upgradeName]
+    return [...appliedUpgrades, upgradeName]
 }
 
 export function upgradeApplied(
     schema: { applied_upgrades: string[] | null },
-    upgradeName: string
+    upgradeName: string,
 ): boolean {
-    return !!schema.applied_upgrades && schema.applied_upgrades.includes(upgradeName)
+    return (
+        !!schema.applied_upgrades &&
+        schema.applied_upgrades.includes(upgradeName)
+    )
 }
