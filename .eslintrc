@@ -1,0 +1,7 @@
+{
+    "extends": ["wanews-base"],
+    "rules": {
+        "@typescript-eslint/camelcase": 0,
+        "@typescript-eslint/class-name-casing": 0
+    }
+}
