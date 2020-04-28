@@ -1,7 +1,6 @@
 {
     "name": "nanobots-data-upgrader",
-    "private": true,
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Allows database data to be upgraded in the background rather than all at once.",
     "scripts": {
         "build": "yarn tsc -b",
